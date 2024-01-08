@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <css-doodle click-to-update>
+        <style>
+          @grid: 24 / 70vmin;
+          background: hsl(@once.r360, 60%, 60%);
+          animation: a 5s ease infinite alternate;
+      
+          @keyframes a {
+            @rn(0, 100%, @once.r(1, 2)) {
+              scale: 0
+            }
+      
+            @rn(100%) {
+              border-radius: 50%
+            }
+      
+            @rn(100%) {
+              background: hsl(@once.r360, 60%, 60%)
+            }
+          }
+        </style>
+      </css-doodle>
+</body>
+</html>

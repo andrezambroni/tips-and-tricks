@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: hidden;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  max-height: 500px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-text {
+  display: flex;
+  width: 100%;
+  max-height: 500px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.footer-section {
+  flex: 1;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-section h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-weight: 400;
+  color: #ddd;
+}
+
+.footer-section:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.line,
+.line2,
+.line3 {
+  filter: url(#glow);
+}
+
+.line1 {
+  text-shadow: 0 0 8px rgba(0, 180, 255, 0.7);
+}
+
+.line2 {
+  text-shadow: 0 0 10px rgba(0, 180, 255, 0.9);
+}
+
+.line3 {
+  text-shadow: 0 0 12px rgba(0, 180, 255, 1);
+}
